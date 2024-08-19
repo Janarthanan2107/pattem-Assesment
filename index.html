@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="navbar">
+            <div class="logo">
+                <p>VENIA</p>
+            </div>
+
+            <div class="category">
+                <p class="active category-item">Home</p>
+                <p class="category-item">Women</p>
+                <p class="category-item">Men</p>
+                <p class="category-item">Smart Gears</p>
+                <p class="category-item">Accessories</p>
+            </div>
+
+            <div class="cart">
+                <p>Cart</p>
+            </div>
+        </div>
+
+        <!-- Landing body container -->
+        <div class="landing-body-container">
+            <div class="frame">
+                <div class="frame-text">
+                    <h1>Men's</h1>
+                    <h1>Outerwear</h1>
+                </div>
+            </div>
+            <img src="./assests/istockphoto-1327444728-2048x2048.jpg" alt="landing-page" class="landing-page-img">
+        </div>
+
+        <div class="body">
+            <!-- Filter -->
+            <div class="filter">
+                <p>Clothing / Women's / OuterWear</p>
+                <br>
+                <div class="category">
+                    <h3>Filters</h3>
+                    <hr>
+                    <div id="categories-container"></div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- Products section -->
+            <div class="products">
+                <!-- Header -->
+                <div class="product-header">
+                    <input type="text" id="search-bar" placeholder="Search products..." class="search-bar">
+
+                    <select name="price" class="price">
+                        <option value="" selected disabled>Sort By Price</option>
+                        <option value="low-to-high">Price: Low to High</option>
+                        <option value="high-to-low">Price: High to Low</option>
+                    </select>
+                </div>
+
+                <!-- Loading Indicator -->
+                <div id="loading-indicator" class="loader-container">
+                    <div class="spinner"></div>
+                </div>
+                
+                <!-- Product items -->
+                <div class="product-item">
+                    <!-- Products will be rendered here -->
+
+                </div>
+
+                <br><br>
+                <!-- Load More button -->
+                <button id="load-more" class="load-more-btn">Load More</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-card-container">
+                <div class="footer-card">
+                    <h5 class="footer-cate">
+                        Account
+                    </h5>
+                    <ul>
+                        <li>Sign In</li>
+                        <li>Register</li>
+                        <li>Order Status</li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h5 class="footer-cate">
+                        About Us
+                    </h5>
+                    <ul>
+                        <li>Our Story</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h5 class="footer-cate">
+                        Help
+                    </h5>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Order Status</li>
+                        <li>Returns</li>
+                    </ul>
+                </div>
+                <div class="footer-card">
+                    <h5 class="footer-cate">
+                        Follow Us!
+                    </h5>
+                    <ul>
+                        <li style="color: gray; cursor: none;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Iste, harum.</li>
+                        <div class="social-media">
+                            <li>facebook</li>
+                            <li>insta</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-navbar">
+            <div class="logo">
+                <p>VENIA</p>
+            </div>
+
+            <div class="copy-rights">
+                @company Name Address Ave
+            </div>
+
+            <div class="terms">
+                <p>Terms Of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./product.js"></script>
+
+</html>
